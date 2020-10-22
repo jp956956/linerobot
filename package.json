@@ -1,0 +1,26 @@
+{
+  "type": "module",
+  "name": "linerobot",
+  "version": "1.0.0",
+  "description": "work for linerobot",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jp956956/linerobot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jp956956/linerobot/issues"
+  },
+  "homepage": "https://github.com/jp956956/linerobot#readme",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "dotenv": "^8.2.0",
+    "linebot": "^1.6.1"
+  }
+}
