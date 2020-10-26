@@ -31,7 +31,21 @@ bot.on('message', async event =>{
                 );
             }
         }
-        // (讀書)
+        // (吃飯位置座標)
+        for (let i = 0;i<life.eat.length;i++) {
+            if (event.message.text === life.eat[i].name) {
+                event.reply(
+                    {
+                        type: 'location',
+                        title: life.eat[i].name,
+                        address: life.eat[i].location,
+                        latitude: life.eat[i].latitude,
+                        longitude: life.eat[i].longitude
+                    }
+                )
+            }
+        }        
+        // (讀書位置座標)
         for (let i = 0;i<life.study.length;i++) {
             if (event.message.text === life.study[i].name) {
                 event.reply(
@@ -45,7 +59,9 @@ bot.on('message', async event =>{
                 )
             }
         }
+        // 吃飯列表產生
         if (event.message.text === '吃飯') {
+            const what = life.eat
             const reply = {
                 type: 'template',
                 altText: 'this is a carousel template',
@@ -54,23 +70,25 @@ bot.on('message', async event =>{
                     columns: []
                 }
             }
-            for(let eat of life.eat) {
+            for(let data of what) {
+                const d = new Date()
+                let when = d.getDay()
                 reply.template.columns.push({
                     thumbnailImageUrl: 'https://example.com/bot/images/item1.jpg',
-                    title: eat.name,
-                    text: eat.location,
+                    title: data.name,
+                    text: data.location,
                     actions: [{
-                      type: 'postback',
-                      label: 'Buy',
-                      data: 'action=buy&itemid=111'
+                        type: 'message',
+                        label: '在哪裡',
+                        text: data.name
                     }, {
-                      type: 'postback',
-                      label: 'Add to cart',
-                      data: 'action=add&itemid=111'
+                      type: 'message',
+                      label: '價位',
+                      text: '陸續開發中'
                     }, {
-                      type: 'uri',
-                      label: 'View detail',
-                      uri: 'http://example.com/page/111'
+                      type: 'message',
+                      label: '營業時間',
+                      text: data.time[when]
                     }]
                   })
                 }
