@@ -1,6 +1,7 @@
 import linebot from 'linebot'
 import dotenv from 'dotenv' 
 import axios from 'axios'
+import life from './life.js'
 
 dotenv.config()
 
@@ -15,7 +16,6 @@ bot.on('message', async event =>{
     const traffic  = await axios.get('https://data.ntpc.gov.tw/api/datasets/71CD1490-A2DF-4198-BEF1-318479775E8A/json?page=0&size=1000')
     // 職訓局周邊食衣住
     // 抓取本地檔案不需要await，不然會發生錯誤
-    const response = axios.get('./life.json')
     try {
         // ubike部分
         for (let res of traffic.data) {
@@ -31,12 +31,41 @@ bot.on('message', async event =>{
                 );
             }
         }
-        // 周遭生活部分
-
-       
+        // 周遭生活部分(吃)
+        for (let i = 0;i<life.eat.length;i++) {
+            if (event.message.text === life.eat[i].name) {
+                event.reply(
+                    {
+                        type: 'location',
+                        title: life.eat[i].name,
+                        address: life.eat[i].location,
+                        latitude: life.eat[i].latitude,
+                        longitude: life.eat[i].longitude
+                    }
+                )
+            }
+        }
+        // (讀書)
+        for (let i = 0;i<life.study.length;i++) {
+            if (event.message.text === life.study[i].name) {
+                event.reply(
+                    {
+                        type: 'location',
+                        title: life.study[i].name,
+                        address: life.study[i].location,
+                        latitude: life.study[i].latitude,
+                        longitude: life.study[i].longitude
+                    }
+                )
+            }
+        }
+        if (event.message.text === '吃飯') {
+            event.reply('吃東西')
+        }
 
     } catch (error) {
         event.reply('錯誤')
+        console.log(error)
     }
 
 })
