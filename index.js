@@ -15,14 +15,26 @@ bot.on('message', async event =>{
     const traffic  = await axios.get('https://data.ntpc.gov.tw/api/datasets/71CD1490-A2DF-4198-BEF1-318479775E8A/json?page=0&size=1000')
     // 職訓局周邊食衣住
     // 抓取本地檔案不需要await，不然會發生錯誤
-    const response = axios.get('./test.json')
-    let reply = ''
+    const response = axios.get('./life.json')
     try {
-        for(let data of traffic.data)
-{            if(event.message.text === data.sno){
-                reply = data.sarea
-                event.reply(reply)
-            } }      
+        // ubike部分
+        for (let res of traffic.data) {
+            if (event.message.text === res.sarea) {
+                event.reply(
+                    {
+                    type: 'location',
+                    title: res.sna + "(可借車輛:" + res.sbi +')',
+                    address: res.ar,
+                    latitude: res.lat,
+                    longitude: res.lng
+                  }
+                );
+            }
+        }
+        // 周遭生活部分
+
+       
+
     } catch (error) {
         event.reply('錯誤')
     }
