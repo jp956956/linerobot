@@ -56,7 +56,6 @@ bot.on('message', async event => {
           recentlylatitude = res.lat
           recentlylongitude = res.lng
           recentlysbi = res.sbi
-          console.log(res.sna)
         }
       }
       event.reply({
@@ -67,6 +66,10 @@ bot.on('message', async event => {
         longitude: recentlylongitude
       })
     }
+
+    let type = ''
+
+
     // (吃飯位置座標)
     for (let i = 0; i < life.eat.length; i++) {
       if (event.message.text === life.eat[i].name) {
@@ -93,9 +96,226 @@ bot.on('message', async event => {
         )
       }
     }
+    // (吃宵夜位置座標)
+    for (let i = 0; i < life.dessert.length; i++) {
+      if (event.message.text === life.dessert[i].name) {
+        event.reply({
+          type: 'location',
+          title: life.dessert[i].name,
+          address: life.dessert[i].location,
+          latitude: life.dessert[i].latitude,
+          longitude: life.dessert[i].longitude
+        }
+        )
+      }
+    }
+    // (洗衣服位置座標)
+    for (let i = 0; i < life.wash.length; i++) {
+      if (event.message.text === life.wash[i].name) {
+        event.reply({
+          type: 'location',
+          title: life.wash[i].name,
+          address: life.wash[i].location,
+          latitude: life.wash[i].latitude,
+          longitude: life.wash[i].longitude
+        }
+        )
+      }
+    }
+    // 搭公車位置座標
+    for (let i = 0; i < life.bus.length; i++) {
+      if (event.message.text === life.bus[i].name) {
+        event.reply({
+          type: 'location',
+          title: life.bus[i].name,
+          address: life.bus[i].location,
+          latitude: life.bus[i].latitude,
+          longitude: life.bus[i].longitude
+        }
+        )
+      }
+    }
+    // 買東西位置座標
+    for (let i = 0; i < life.buy.length; i++) {
+      if (event.message.text === life.buy[i].name) {
+        event.reply({
+          type: 'location',
+          title: life.buy[i].name,
+          address: life.buy[i].location,
+          latitude: life.buy[i].latitude,
+          longitude: life.buy[i].longitude
+        }
+        )
+      }
+    }
     // 吃飯列表產生
     if (event.message.text === '吃飯') {
       const what = life.eat
+      const reply = {
+        type: 'template',
+        altText: 'this is a carousel template',
+        template: {
+          type: 'carousel',
+          columns: []
+        }
+      }
+      for (const data of what) {
+        const d = new Date()
+        const when = d.getDay()
+        reply.template.columns.push({
+          thumbnailImageUrl: 'https://example.com/bot/images/item1.jpg',
+          title: data.name,
+          text: data.location,
+          actions: [{
+            type: 'message',
+            label: '在哪裡',
+            text: data.name
+          }, {
+            type: 'message',
+            label: '價位',
+            text: '陸續開發中'
+          }, {
+            type: 'message',
+            label: '營業時間',
+            text: data.time[when]
+          }]
+        })
+      }
+      event.reply(reply)
+    } else if (event.message.text === '吃宵夜') {
+      const what = life.dessert
+      const reply = {
+        type: 'template',
+        altText: 'this is a carousel template',
+        template: {
+          type: 'carousel',
+          columns: []
+        }
+      }
+      for (const data of what) {
+        const d = new Date()
+        const when = d.getDay()
+        reply.template.columns.push({
+          thumbnailImageUrl: 'https://example.com/bot/images/item1.jpg',
+          title: data.name,
+          text: data.location,
+          actions: [{
+            type: 'message',
+            label: '在哪裡',
+            text: data.name
+          }, {
+            type: 'message',
+            label: '價位',
+            text: '陸續開發中'
+          }, {
+            type: 'message',
+            label: '營業時間',
+            text: data.time[when]
+          }]
+        })
+      }
+      event.reply(reply)
+    } else if (event.message.text === '唸書') {
+      const what = life.study
+      const reply = {
+        type: 'template',
+        altText: 'this is a carousel template',
+        template: {
+          type: 'carousel',
+          columns: []
+        }
+      }
+      for (const data of what) {
+        const d = new Date()
+        const when = d.getDay()
+        reply.template.columns.push({
+          thumbnailImageUrl: 'https://example.com/bot/images/item1.jpg',
+          title: data.name,
+          text: data.location,
+          actions: [{
+            type: 'message',
+            label: '在哪裡',
+            text: data.name
+          }, {
+            type: 'message',
+            label: '價位',
+            text: '陸續開發中'
+          }, {
+            type: 'message',
+            label: '營業時間',
+            text: data.time[when]
+          }]
+        })
+      }
+      event.reply(reply)
+    } else if (event.message.text === '洗衣服') {
+      const what = life.wash
+      const reply = {
+        type: 'template',
+        altText: 'this is a carousel template',
+        template: {
+          type: 'carousel',
+          columns: []
+        }
+      }
+      for (const data of what) {
+        const d = new Date()
+        const when = d.getDay()
+        reply.template.columns.push({
+          thumbnailImageUrl: 'https://example.com/bot/images/item1.jpg',
+          title: data.name,
+          text: data.location,
+          actions: [{
+            type: 'message',
+            label: '在哪裡',
+            text: data.name
+          }, {
+            type: 'message',
+            label: '價位',
+            text: '陸續開發中'
+          }, {
+            type: 'message',
+            label: '營業時間',
+            text: data.time[when]
+          }]
+        })
+      }
+      event.reply(reply)
+    } else if (event.message.text === '搭公車') {
+      const what = life.bus
+      const reply = {
+        type: 'template',
+        altText: 'this is a carousel template',
+        template: {
+          type: 'carousel',
+          columns: []
+        }
+      }
+      for (const data of what) {
+        const d = new Date()
+        const when = d.getDay()
+        reply.template.columns.push({
+          thumbnailImageUrl: 'https://example.com/bot/images/item1.jpg',
+          title: data.name,
+          text: data.location,
+          actions: [{
+            type: 'message',
+            label: '在哪裡',
+            text: data.name
+          }, {
+            type: 'message',
+            label: '價位',
+            text: '陸續開發中'
+          }, {
+            type: 'message',
+            label: '營業時間',
+            text: data.time[when]
+          }]
+        })
+      }
+      event.reply(reply)
+    } else if (event.message.text === '買東西') {
+      const what = life.buy
       const reply = {
         type: 'template',
         altText: 'this is a carousel template',
