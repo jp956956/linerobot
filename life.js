@@ -6,6 +6,8 @@ export default
       "location": "新北市泰山區仁愛路122號",
       "latitude": "25.055870",
       "longitude": "121.434477",
+      "price": '看你點什麼',
+      "photo": 'https://geo0.ggpht.com/cbk?cb_client=maps_sv.tactile&authuser=0&hl=zh-TW&gl=tw&output=thumbnail&thumb=2&w=345&h=170&pitch=-8.680422388720586&ll=25.05577589873889%2C121.4337514132903&panoid=J1faNk0JstZkz2D6qBXVrQ&yaw=153.59661159772955',
       "time": [
         "星期日：07:30–21:00",
         "星期一：07:00–21:00",
@@ -21,6 +23,8 @@ export default
       "location": "新北市泰山區工專路22號3樓",
       "latitude": "25.039912",
       "longitude": "121.423666",
+      "price": '不用錢',
+      "photo": 'https://geo0.ggpht.com/cbk?cb_client=maps_sv.tactile&authuser=0&hl=zh-TW&gl=tw&output=thumbnail&thumb=2&w=345&h=170&pitch=-23.359828645094595&ll=25.03979795123844%2C121.4235452047338&panoid=QSi0Ch4slPxH8sOKYZJROw&yaw=42.8530321599615',
       "time": [
         "星期日：08:30–17:00",
         "星期一：08:30–17:00",
@@ -36,6 +40,8 @@ export default
       "location": "新北市泰山區全興路212號5樓",
       "latitude": "25.056402",
       "longitude": "121.433525",
+      "price": '不用錢',
+      "photo": 'https://geo0.ggpht.com/cbk?cb_client=maps_sv.tactile&authuser=0&hl=zh-TW&gl=tw&output=thumbnail&thumb=2&w=345&h=170&pitch=-13.06982072413578&ll=25.05647766579955%2C121.4334301134281&panoid=lL2f8-1yusd-2Elw_fvR6A&yaw=156.57285486714974',
       "time": [
         "星期日：08:30–17:00",
         "星期一：08:30–17:00",
@@ -53,6 +59,7 @@ export default
       "location": "泰山女生宿舍一樓",
       "latitude": "25.043840",
       "longitude": "121.418488",
+      "photo": 'https://example.com/bot/images/item1.jpg',
       "time": [
         "星期日：07:30–23:00",
         "星期一：07:00–23:00",
@@ -68,6 +75,7 @@ export default
       "location": "明志路三段泰山區新北市142巷",
       "latitude": "25.040072",
       "longitude": "121.424267",
+      "photo": 'https://geo0.ggpht.com/cbk?cb_client=maps_sv.tactile&authuser=0&hl=zh-TW&gl=tw&output=thumbnail&thumb=2&w=345&h=170&pitch=-12.03423042382181&ll=25.0400884453779%2C121.4243155672424&panoid=ewD5mnNUiFge40IHWmfoXQ&yaw=352.0479220556428',
       "time": [
         "星期日：24HR",
         "星期一：24HR",
@@ -85,6 +93,7 @@ export default
       "location": "新北市泰山區明志路三段87號",
       "latitude": "25.041450",
       "longitude": "121.425133",
+      "price": '看你買多少',
       "photo": 'https://geo0.ggpht.com/cbk?cb_client=maps_sv.tactile&authuser=0&hl=zh-TW&gl=tw&output=thumbnail&thumb=2&w=345&h=170&pitch=-7.518710933303453&ll=25.04124291332832%2C121.4250564996764&panoid=HpKMMD1OG_iVrwSetC_c9A&yaw=57.45650149206861',
       "time": [
         "星期日：:08:30–22:30",
@@ -101,6 +110,7 @@ export default
       "location": "新北市泰山區明志路三段128號",
       "latitude": "25.040505",
       "longitude": "121.424909",
+      "price": '看你買多少',
       "photo": 'https://geo0.ggpht.com/cbk?cb_client=maps_sv.tactile&authuser=0&hl=zh-TW&gl=tw&output=thumbnail&thumb=2&w=345&h=170&pitch=-10.75114061247406&ll=25.04021641680957%2C121.4249455092707&panoid=TpvzV9rpvbz9N2t-WtMs_A&yaw=276.5778654429835',
       "time": [
         "星期日：:24HR",

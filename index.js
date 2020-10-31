@@ -173,7 +173,7 @@ bot.on('message', async event => {
           }, {
             type: 'message',
             label: '價位',
-            text: '陸續開發中'
+            text: data.price
           }, {
             type: 'message',
             label: '營業時間',
@@ -206,7 +206,7 @@ bot.on('message', async event => {
           }, {
             type: 'message',
             label: '價位',
-            text: '陸續開發中'
+            text: data.price
           }, {
             type: 'message',
             label: '營業時間',
@@ -229,7 +229,7 @@ bot.on('message', async event => {
         const d = new Date()
         const when = d.getDay()
         reply.template.columns.push({
-          thumbnailImageUrl: 'https://example.com/bot/images/item1.jpg',
+          thumbnailImageUrl: data.photo,
           title: data.name,
           text: data.location,
           actions: [{
@@ -239,7 +239,7 @@ bot.on('message', async event => {
           }, {
             type: 'message',
             label: '價位',
-            text: '陸續開發中'
+            text: data.price
           }, {
             type: 'message',
             label: '營業時間',
@@ -262,7 +262,7 @@ bot.on('message', async event => {
         const d = new Date()
         const when = d.getDay()
         reply.template.columns.push({
-          thumbnailImageUrl: 'https://example.com/bot/images/item1.jpg',
+          thumbnailImageUrl: data.photo,
           title: data.name,
           text: data.location,
           actions: [{
@@ -272,7 +272,7 @@ bot.on('message', async event => {
           }, {
             type: 'message',
             label: '價位',
-            text: '陸續開發中'
+            text: data.price
           }, {
             type: 'message',
             label: '營業時間',
@@ -338,7 +338,7 @@ bot.on('message', async event => {
           }, {
             type: 'message',
             label: '價位',
-            text: '陸續開發中'
+            text: data.price
           }, {
             type: 'message',
             label: '營業時間',
