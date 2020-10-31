@@ -129,6 +129,8 @@ export default
       "location": "新北市泰山區明志路三段142巷46號(商場裡面)",
       "latitude": "25.040246",
       "longitude": "121.424279",
+      "price": '看你吃多少',
+      "photo": 'https://geo0.ggpht.com/cbk?cb_client=maps_sv.tactile&authuser=0&hl=zh-TW&gl=tw&output=thumbnail&thumb=2&w=345&h=170&pitch=-0.9045675370010287&ll=25.0400884453779%2C121.4243155672424&panoid=ewD5mnNUiFge40IHWmfoXQ&yaw=19.84269006232819',
       "time": [
         "星期日：11:00–20:00",
         "星期一：11:00–20:00",
@@ -144,6 +146,8 @@ export default
       "location": "新北市泰山區明志路三段145巷5弄30號",
       "latitude": "25.040663",
       "longitude": "121.425935",
+      "price": '看你吃多少',
+      "photo": 'https://geo0.ggpht.com/cbk?cb_client=maps_sv.tactile&authuser=0&hl=zh-TW&gl=tw&output=thumbnail&thumb=2&w=345&h=170&pitch=2.5856944920188596&ll=25.04057928723386%2C121.4257207559479&panoid=dV0007hT-4UNidOXwbto6g&yaw=60.759581436825094',
       "time": [
         "星期日：休息",
         "星期一：11:00–21:30",
@@ -159,6 +163,8 @@ export default
       "location": "新北市泰山區貴子路11號",
       "latitude": "25.041998",
       "longitude": "121.425811",
+      "price": '看你吃多少',
+      "photo": 'https://geo0.ggpht.com/cbk?cb_client=maps_sv.tactile&authuser=0&hl=zh-TW&gl=tw&output=thumbnail&thumb=2&w=345&h=170&pitch=-3.8590876660169613&ll=25.0418803520378%2C121.4258861684741&panoid=YZ4TfuYfZbIQcIJyjHCxdA&yaw=39.382315354252285',
       "time": [
         "星期日：11:00–20:30",
         "星期一：11:00–20:30",
@@ -174,6 +180,8 @@ export default
       "location": "明志科大男生宿舍裡",
       "latitude": "25.040889",
       "longitude": "121.419205",
+      "price": '看你吃多少',
+      "photo": 'https://lh5.googleusercontent.com/p/AF1QipNLfUetayz-DZb78G0rjKM0c-9LhjWdnlMha4Tv=w408-h306-k-no',
       "time": [
         "星期日：休息",
         "星期一：16:00–23:00",
