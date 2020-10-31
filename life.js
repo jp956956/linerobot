@@ -85,6 +85,7 @@ export default
       "location": "新北市泰山區明志路三段87號",
       "latitude": "25.041450",
       "longitude": "121.425133",
+      "photo": 'https://geo0.ggpht.com/cbk?cb_client=maps_sv.tactile&authuser=0&hl=zh-TW&gl=tw&output=thumbnail&thumb=2&w=345&h=170&pitch=-7.518710933303453&ll=25.04124291332832%2C121.4250564996764&panoid=HpKMMD1OG_iVrwSetC_c9A&yaw=57.45650149206861',
       "time": [
         "星期日：:08:30–22:30",
         "星期一：:08:30–22:30",
@@ -100,6 +101,7 @@ export default
       "location": "新北市泰山區明志路三段128號",
       "latitude": "25.040505",
       "longitude": "121.424909",
+      "photo": 'https://geo0.ggpht.com/cbk?cb_client=maps_sv.tactile&authuser=0&hl=zh-TW&gl=tw&output=thumbnail&thumb=2&w=345&h=170&pitch=-10.75114061247406&ll=25.04021641680957%2C121.4249455092707&panoid=TpvzV9rpvbz9N2t-WtMs_A&yaw=276.5778654429835',
       "time": [
         "星期日：:24HR",
         "星期一：:24HR",
