@@ -191,6 +191,8 @@ export default
       "location": "新北市泰山區明志路三段206號(路邊攤)",
       "latitude": "25.038393",
       "longitude": "121.423819",
+      "price": '看你吃多少',
+      "photo": 'https://geo0.ggpht.com/cbk?cb_client=maps_sv.tactile&authuser=0&hl=zh-TW&gl=tw&output=thumbnail&thumb=2&w=345&h=170&pitch=6.126452755422463&ll=25.03838089629993%2C121.4239381473593&panoid=1D2irrxBQTNpwto67Y9pJw&yaw=269.0467733610729',
       "time": [
         "星期日：19:00–23:00",
         "星期一：休息",
@@ -206,6 +208,8 @@ export default
       "location": "新北市泰山區明志路三段225號",
       "latitude": "25.038039",
       "longitude": "121.423885",
+      "price": '看你吃多少',
+      "photo": 'https://geo0.ggpht.com/cbk?cb_client=maps_sv.tactile&authuser=0&hl=zh-TW&gl=tw&output=thumbnail&thumb=2&w=345&h=170&pitch=-4.792822981999478&ll=25.03810814070057%2C121.4237783048992&panoid=cEzccWfVWgSUAHxyRm25Gg&yaw=146.55344343029432',
       "time": [
         "星期日：15:00–01:00",
         "星期一：15:00–01:00",
@@ -221,6 +225,8 @@ export default
       "location": "新北市泰山區台麗街5號",
       "latitude": "25.038295",
       "longitude": "121.424468",
+      "price": '看你吃多少',
+      "photo": 'https://geo0.ggpht.com/cbk?cb_client=maps_sv.tactile&authuser=0&hl=zh-TW&gl=tw&output=thumbnail&thumb=2&w=345&h=170&pitch=6.484274276197624&ll=25.0382862079881%2C121.4244273488257&panoid=l14WwqU7Dmz_JZh0KlvfZQ&yaw=52.60696570710299',
       "time": [
         "星期日：17:00–22:30",
         "星期一：17:00–22:30",
@@ -236,6 +242,8 @@ export default
       "location": "新北市泰山區明志路三段145巷2弄11號",
       "latitude": "25.039581",
       "longitude": "121.425289",
+      "price": '看你吃多少',
+      "photo": 'https://geo0.ggpht.com/cbk?cb_client=maps_sv.tactile&authuser=0&hl=zh-TW&gl=tw&output=thumbnail&thumb=2&w=345&h=170&pitch=2.749487749638547&ll=25.03953988566071%2C121.4251223586557&panoid=qj6v57CZL418CDPH3LMreA&yaw=97.68474184157712',
       "time": [
         "星期日：17:00–00:00",
         "星期一：17:00–00:00",
@@ -251,6 +259,8 @@ export default
       "location": "新北市泰山區明志路三段48號1樓",
       "latitude": "25.042457",
       "longitude": "121.424828",
+      "price": '看你吃多少',
+      "photo": 'https://geo0.ggpht.com/cbk?cb_client=maps_sv.tactile&authuser=0&hl=zh-TW&gl=tw&output=thumbnail&thumb=2&w=345&h=170&pitch=-9.108105608557139&ll=25.04239524487632%2C121.4249213454733&panoid=1MXFR7PdLQntHraBmKJHXQ&yaw=262.53446799416974',
       "time": [
         "星期日：14:00–01:00",
         "星期一：14:00–01:00",
@@ -266,6 +276,8 @@ export default
       "location": "新北市泰山區中央路34號",
       "latitude": "25.043137",
       "longitude": "121.426298",
+      "price": '看你吃多少',
+      "photo": 'https://geo0.ggpht.com/cbk?cb_client=maps_sv.tactile&authuser=0&hl=zh-TW&gl=tw&output=thumbnail&thumb=2&w=345&h=170&pitch=11.07274086630234&ll=25.04303123171812%2C121.4263421952941&panoid=mYPz04KAfQrPnKjgE86chQ&yaw=300.79689603720533',
       "time": [
         "星期日：15:30–00:00",
         "星期一：15:30–00:00",

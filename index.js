@@ -196,7 +196,7 @@ bot.on('message', async event => {
         const d = new Date()
         const when = d.getDay()
         reply.template.columns.push({
-          thumbnailImageUrl: 'https://example.com/bot/images/item1.jpg',
+          thumbnailImageUrl: data.photo,
           title: data.name,
           text: data.location,
           actions: [{
