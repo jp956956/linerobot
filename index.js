@@ -148,7 +148,7 @@ bot.on('message', async event => {
         )
       }
     }
-    // 吃飯列表產生
+    // 列表產生
     if (event.message.text === '吃飯') {
       const what = life.eat
       const reply = {
@@ -281,7 +281,7 @@ bot.on('message', async event => {
         })
       }
       event.reply(reply)
-    } else if (event.message.text === '搭公車') {
+    } else if (event.message.text === '搭車去台北') {
       const what = life.bus
       const reply = {
         type: 'template',
@@ -295,7 +295,7 @@ bot.on('message', async event => {
         const d = new Date()
         const when = d.getDay()
         reply.template.columns.push({
-          thumbnailImageUrl: 'https://example.com/bot/images/item1.jpg',
+          thumbnailImageUrl: data.photo,
           title: data.name,
           text: data.location,
           actions: [{
@@ -305,7 +305,7 @@ bot.on('message', async event => {
           }, {
             type: 'message',
             label: '價位',
-            text: '陸續開發中'
+            text: data.price
           }, {
             type: 'message',
             label: '營業時間',

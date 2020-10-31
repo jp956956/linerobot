@@ -271,6 +271,8 @@ export default
       "location": "新北市泰山區明志國小(新生路)",
       "latitude": "25.045664",
       "longitude": "121.426790",
+      "price": '單程一段票15塊',
+      "photo": 'https://geo0.ggpht.com/cbk?cb_client=maps_sv.tactile&authuser=0&hl=zh-TW&gl=tw&output=thumbnail&thumb=2&w=345&h=170&pitch=0.5082480112676251&ll=25.04563346170147%2C121.4269565585921&panoid=mfhaLQtGA8z4euPIPU3cWQ&yaw=255.72466550112728',
       "time": [
         "星期日：1030 1130 1230 1330 1430 1530 2030 2130",
         "星期一：0615 0640 0700 0720 0740 0800 0820 0845 0930 1030 1130 1230 1330 1430 1530 1615 1645 1710 1730 1750 1815 1845 1915 1945 2030 2130",
@@ -280,15 +282,23 @@ export default
         "星期五：0615 0640 0700 0720 0740 0800 0820 0845 0930 1030 1130 1230 1330 1430 1530 1615 1645 1710 1730 1750 1815 1845 1915 1945 2030 2130",
         "星期六：1030 1130 1230 1330 1430 1530 2030 2130"
       ]
-    }
-  ],
-  "MRT": [
+    },
     {
       "name": "A6 泰山貴和站",
       "location": "新北市泰山區新北大道六段460號",
       "latitude": "25.033556",
       "longitude": "121.422310",
-      "time": []
+      "price": '到台北車站40塊',
+      "photo": 'https://geo0.ggpht.com/cbk?cb_client=maps_sv.tactile&authuser=0&hl=zh-TW&gl=tw&output=thumbnail&thumb=2&w=345&h=170&pitch=-2.7581117631763874&ll=25.03302974479193%2C121.4222600425224&panoid=P3IMIkoTQ37bC18zonPUIw&yaw=19.761185950694347',
+      "time": [
+        "星期日：https://imgur.com/a/WWfDVNo",
+        "星期一：https://imgur.com/a/WWfDVNo",
+        "星期二：https://imgur.com/a/WWfDVNo",
+        "星期三：https://imgur.com/a/WWfDVNo",
+        "星期四：https://imgur.com/a/WWfDVNo",
+        "星期五：https://imgur.com/a/WWfDVNo",
+        "星期六：https://imgur.com/CsVpAUa"
+      ]
     }
   ]
 }
