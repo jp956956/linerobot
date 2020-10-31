@@ -7,6 +7,9 @@
   "scripts": {
     "start": "nodemon index.js"
   },
+  "engines": {
+    "node": "14.14.0"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/jp956956/linerobot.git"
